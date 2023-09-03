@@ -1,0 +1,281 @@
+@import url('https://fonts.cdnfonts.com/css/dsc');
+
+*{
+    background-color: black;
+    color: rgb(156, 224, 54);
+    margin: 0 30px 0 30px;
+    font-family: 'DSC', sans-serif;
+    line-height: 30px;
+}
+
+/* Header */
+header{
+    margin-top: 40px;
+}
+
+main{
+    margin-top: 100px;
+}
+
+.topnav{
+    float: right
+}
+a{
+    color: rgb(156, 224, 54);
+    text-decoration: none;
+    font-size: 30px;
+    transition: 0.5s;
+}a:hover{
+    font-size: 35px;
+    color: green;
+}
+/* Main */
+.sidebar{
+    border: 1px solid white;
+    width: 10%;
+    padding: 30px;
+    float: right;
+    margin: 0 5% 0 5%;
+}.loading{
+    height: 120px;
+    width: 120px;
+    border: 6px solid;
+    border-color: white transparent;
+    border-radius: 50%;
+    margin: auto;
+    animation: loading 2s linear infinite;
+}
+
+.indeximg{
+    height: 500px;
+    margin: 50px auto 0 auto;
+    display: block;
+
+}
+
+h3{
+    color: white;
+    margin-bottom: 10px;
+    transition: 0.5s;
+}h3:hover{
+    font-size: 35px;
+    color: green;
+}
+
+.section{
+   margin-top: 40px;
+}
+
+.article{
+    border: 1px solid white;
+    display: grid;
+    margin-top: 30px;
+    padding: 50px;
+    padding-bottom: 150px;
+}
+#h2-a1{
+    position: relative;
+    margin: 50px auto 50px auto;
+    font-size: 50px;
+    animation: font-change 4s infinite;
+    color: white;
+}
+
+
+#a3 table{
+    text-align: center;
+    background-color: green;
+    margin-top: 30px;  
+}
+
+
+.c-footer{
+    margin-top: 50px;
+    padding: 15px 10px 15px 10px;
+    border: 1px solid white;
+}
+
+
+
+@keyframes loading{
+    0%{
+        transform: rotate(360deg);
+        border-color: white transparent;
+    }
+    50%{
+        transform: rotate(360deg);
+        border-color: green transparent;
+    }
+}
+
+@keyframes font-change{
+    from{
+        color: black;
+        font-size: 5px;
+    }
+    to{
+        color: white;
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    *{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    .topnav{
+        margin: 15px auto 30px auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    a{
+        padding: 5px;
+        font-size: 25px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid;
+        border-style: dotted;
+    }
+
+    header p, h1{
+        text-align: center;
+    }
+
+    .sidebar{
+        width: 80px;
+        height: 100px;
+        padding: 20px;
+        margin: 0 5% 0 5%;
+    }
+    
+    .loading{
+        height: 80px;
+        width: 80px;
+    }
+
+    @keyframes font-change{
+        from{
+            color: black;
+            font-size: 5px;
+        }
+        to{
+            color: white;
+            font-size: 45px;
+        }
+    }
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 999px){
+
+    *{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    header{
+        text-align: center;
+    }
+
+    .topnav{
+        margin: 15px auto 30px auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    a{
+        padding: 5px;
+        font-size: 25px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid;
+        border-style: dotted;
+    }
+
+    .sidebar{
+        width: 80px;
+        height: 100px;
+        padding: 20px;
+        margin: 0 5% 0 5%;
+    }
+    
+    .loading{
+        height: 80px;
+        width: 80px;
+    }
+
+    @keyframes font-change{
+        from{
+            color: black;
+            font-size: 5px;
+        }
+        to{
+            color: white;
+            font-size: 45px;
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px){
+
+    header{
+        text-align: center;
+        display: inline-block;
+        width: 90%;
+    }
+
+    h1{
+        margin-top: 100px;
+    }
+
+    .topnav{
+        width: auto;
+        margin: auto;
+    }
+
+    .topnav a{
+        margin: auto 30px auto 30px;
+    }
+
+
+
+    .sidebar{
+        width: 80px;
+        height: 100px;
+        padding: 20px;
+        margin: 0 5% 0 5%;
+    }
+    
+    .loading{
+        height: 80px;
+        width: 80px;
+    }
+
+}
+
+@media screen and (min-width: 1101px) and (max-width: 1400px){
+
+    .sidebar{
+        width: 100px;
+        height: 120px;
+        padding: 20px;
+        margin: 0 5% 0 5%;
+    }
+    
+    .loading{
+        height: 100px;
+        width: 100px;
+    }
+
+}
+
+    
